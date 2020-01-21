@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ekaterina Bazhenova](https://up.htmlacademy.ru/htmlcss/27/user/1278965).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон ШабельниковНеизвестно].(https://htmlacademy.ru/profile/id292541).
 
 ---
 
