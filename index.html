@@ -69,17 +69,44 @@
       </ol>
       <p><b>Заинтересовались?</b><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <!--pop-up-->
+        <!--pop-up-->
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Поиск гостиницы в седоне</legend>
+          <div>
+            <label for="сheck-in_date">Дата заезда</label>
+            <input type="text" name="date" id="сheck-in_date" required>
+          </div>
+          <div>
+            <label for="сheck-out_date">Дата выезда</label>
+            <input type="text" name="date" id="сheck-out_date" required>
+          </div>
+          <div>
+            <label for="adults">Взрослые</label>
+            <input type="number" name="adults" id="adults" required>
+          </div>
+          <div>
+            <label for="kids">Дети</label>
+            <input type="number" name="kids" id="kids" required>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Найти">
+        </div>
+
+      </form>
     </section>
   </main>
   <footer>
     <p>
-    <img src="img/map.png" width="1200" height="594" alt="Карта">
+      <img src="img/map.png" width="1200" height="594" alt="Карта">
     </p>
     <span class="footer-back">#VISITSEDONA</span>
     <ul>
-      <li><a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="твиттер">мы в твиттере</a></li>
-      <li><a href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук">мы в фейсбуке</a></li>
+      <li><a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="твиттер">мы в
+          твиттере</a></li>
+      <li><a href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук">мы в
+          фейсбуке</a></li>
       <li><a href="https://youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="ютуб">мы в ютубе</a></li>
     </ul>
     <span class="Website-by">Website by</span><br>
