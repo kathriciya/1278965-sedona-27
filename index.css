@@ -68,9 +68,11 @@ a {
 }
 
 .footer-net-list a {
+    background-image:url("background_icon.png");
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
+    
 }
 
 .footer-net-list a:first-child {
