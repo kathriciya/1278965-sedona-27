@@ -44,22 +44,10 @@ a {
     color: #766357;
 }
 
-
-
 /* Main */
 
-
-
-
-
-/*pop-up*/
-
-
-
-
-
-
 /* Footer */
+
 .main-footer {
     width: 1200px;
     color: #000000;
@@ -68,11 +56,10 @@ a {
 }
 
 .footer-net-list a {
-    background-image:url("background_icon.png");
+    background-image: url("background_icon.png");
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
-    
 }
 
 .footer-net-list a:first-child {
@@ -93,4 +80,62 @@ a {
 
 .footer-net-list a:focus {
     background-color: #5496bd;
+}
+
+/*pop-up*/
+
+.search-form-title {}
+
+.search-hotel {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+}
+
+.modal {
+    position: fixed;
+    color: #000000;
+    background-color: #ffffff;
+    width: 568px;
+    height: 395px;
+    padding: 55px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    display: none;
+}
+
+.booking input[type="text"] {
+    font: inherit;
+    color: #000000;
+    text-transform: inherit;
+    background-color: #f2f2f2;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 14px;
+    padding-left: 13px;
+}
+
+.icon-calendar {
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    background-image: url("calendar.svg");
+    width: 21px;
+    height: 22px;
+    background-color: #a9a9a9;
+}
+
+.modal-search {
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81b3d2;
 }

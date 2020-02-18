@@ -69,34 +69,11 @@
           <p> Большинство едет в гранд каньон<br> и толпится там</p>
         </li>
       </ol>
+    </section>
+    <section class="search-form-title">
       <p><b>Заинтересовались?</b>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-        <!--pop-up-->
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <fieldset>
-          <legend>Поиск гостиницы в седоне</legend>
-          <div>
-            <label for="сheck-in_date">Дата заезда</label>
-            <input type="text" name="date" id="сheck-in_date" required>
-          </div>
-          <div>
-            <label for="сheck-out_date">Дата выезда</label>
-            <input type="text" name="date" id="сheck-out_date" required>
-          </div>
-          <div>
-            <label for="adults">Взрослые</label>
-            <input type="number" name="adults" id="adults" required>
-          </div>
-          <div>
-            <label for="kids">Дети</label>
-            <input type="number" name="kids" id="kids" required>
-          </div>
-        </fieldset>
-        <div>
-         <button type="submit">Найти</button>
-        </div>
-
-      </form>
+        <button class="search-hotel" type="button">Поиск гостиницы в Cедоне</button>
     </section>
   </main>
   <footer class="main-footer">
@@ -115,6 +92,33 @@
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «htmlacademy»">
         </a>
   </footer>
+
+  <section class="modal">
+    <form class="booking" action="https://echo.htmlacademy.ru/courses" method="post">
+      <fieldset>
+        <div>
+          <label for="сheck-in">Дата заезда</label>
+          <input class="icon-calendar" type="text" name="date" id="сheck-in" required>
+        </div>
+        <div>
+          <label for="сheck-out">Дата выезда</label>
+          <input class="icon-calendar" type="text" name="date" id="сheck-out" required>
+        </div>
+        <div>
+          <label for="adults">Взрослые</label>
+          <input type="number" name="adults" id="adults" required>
+        </div>
+        <div>
+          <label for="kids">Дети</label>
+          <input type="number" name="kids" id="kids" required>
+        </div>
+      </fieldset>
+      <div>
+        <button class="modal-search" type="button">Найти</button>
+      </div>
+    </form>
+  </section>
+
 </body>
 
 </html>
