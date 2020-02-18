@@ -28,7 +28,15 @@ a {
     text-transform: uppercase;
 }
 
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
 .site-navigation a {
+    display: block;
+    padding: 22px 74px;
     color: #000;
 }
 
@@ -55,36 +63,42 @@ a {
     opacity: 0.9;
 }
 
-.footer-net-list a {
-    background-image: url("background_icon.png");
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
+    margin-bottom: 10px;
 }
 
-.footer-net-list a:first-child {
-    background-image: url("twitter.svg");
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 151px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.footer-net-list a:nth-child(2) {
-    background-image: url("fb-icon.svg");
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
 }
 
-.footer-net-list a:last-child {
-    background-image: url("youtube.svg");
+.social-button:active {
+  background-color: #5496bd;
 }
 
-.footer-net-list a:hover {
-    background-color: #669ec0;
+.social-button:active path {
+  fill: #87b6d2;
+  opacity: 0.3;
 }
 
-.footer-net-list a:focus {
-    background-color: #5496bd;
-}
 
 /*pop-up*/
-
-.search-form-title {}
 
 .search-hotel {
     color: #ffffff;
@@ -99,6 +113,8 @@ a {
 
 .modal {
     position: fixed;
+    top: 1396px;
+    left: 50%;
     color: #000000;
     background-color: #ffffff;
     width: 568px;
