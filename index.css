@@ -41,7 +41,6 @@ a {
     background-color: #ffffff;
 }
 
-
 /* Header */
 
 .main-navigation {
@@ -80,8 +79,7 @@ a {
     color: #000;
 }
 
-.site-navigation a[href]:hover,
-.site-navigation a[href]:focus {
+.site-navigation a[href]:hover, .site-navigation a[href]:focus {
     color: #81b3d2;
 }
 
@@ -94,11 +92,58 @@ a {
 }
 
 /* Main */
-.welcom {
-    background-image: url("background-photo.jpg");
-    background-position: top center;
+
+.greeting {
+    background-image: url("../img/background-photo.jpg");
+    width: 1200px;
+    height: 800px;
+    display: block;
+    position: relative;
 }
 
+.greeting-img {
+    position: relative;
+    top: 133px;
+    left: 370px;
+}
+
+.greeting::after {
+    content: ' ';
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/intro-mask.svg");
+    position: absolute;
+    bottom: 216px;
+}
+
+.layer-white {}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1064px;
+    height: 330px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 /* Footer */
 
@@ -122,17 +167,16 @@ a {
     display: flex;
     background-color: rgba(255, 255, 255, 0.9);
     min-height: 120px;
-
 }
+
 .main-footer-index .footer-content {
     position: absolute;
     width: 100%;
     bottom: 0;
-
 }
+
 .footer-content .container {
     display: flex;
-
 }
 
 .footer-column {
@@ -153,7 +197,6 @@ a {
 
 .social-list li:not(:nth-child(3n)) {
     margin-right: 6px;
-
 }
 
 .social-button {
@@ -172,7 +215,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .social-button-tw::before {
@@ -185,18 +227,15 @@ a {
     background-image: url("../img/fb-icon.svg");
     width: 12px;
     height: 22px;
-
 }
 
 .social-button-ytb::before {
     background-image: url("../img/youtube.svg");
     width: 20px;
     height: 16px;
-
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover, .social-button:focus {
     background-color: #669ec0;
 }
 
