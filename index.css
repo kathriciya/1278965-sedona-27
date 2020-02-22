@@ -72,7 +72,9 @@ a {
 }
 
 .logo {
+    position: relative;
     margin-top: -58px;
+    z-index: 100;
 }
 
 .site-navigation a {
@@ -94,38 +96,75 @@ a {
 /* Main */
 
 .greeting {
-    background-image: url("../img/background-photo.jpg");
+    background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom -5px, center top 0;
     width: 1200px;
-    height: 800px;
-    display: block;
-    position: relative;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #86b7d4;
 }
 
 .greeting-img {
-    position: relative;
-    top: 133px;
-    left: 370px;
+    display: block;
+
 }
 
-.greeting::after {
-    content: ' ';
-    width: 1200px;
-    height: 57px;
-    background-image: url("../img/intro-mask.svg");
-    position: absolute;
-    bottom: 216px;
+
+
+.information {
+  background-color: #ffffff;
+  padding-top: 60px;
 }
 
-.layer-white {}
-
-.reasons {
-    display: flex;
-    flex-wrap: wrap;
+.information .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.inf {
+  max-width: 440px;
+  display: block;
+  margin-bottom: 38px;
+  text-align: center;
+
+}
+
+.reasons-5 {
+  max-width: 490px;
+  margin-bottom: 26px;
+}
+
+
 
 .reasons-list {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reasons-item {
+  display: flex;
+}
+
+.reasons-item-color {
+background-color: #81b3d2;
+}
+
+.reasons-item-reverse {
+flex-direction: row-reverse;
+}
+
+.reasons-item-block {
+  display: block;
+}
+.reasons-block {
+
 }
 
 .advantages {
