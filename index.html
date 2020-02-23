@@ -41,7 +41,7 @@
           <li class="reasons-item reasons-item-color">
             <div class="reasons-block">
               <h2>Настоящий городок</h2>
-              <p class="number">— №1 —</p>
+              <span class="number">&mdash;&nbsp;&#8470;1&nbsp;&mdash;</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="reasons-img">
@@ -50,20 +50,20 @@
           </li>
           <li class="reasons-item">
             <ul class="advantages-list">
-              <li>
-                <span class="visually-hidden icon-house">Домик картинка</span>
-                <h2>Жильё</h2>
-                <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+              <li class="advantages-item">
+                <span class="visually-hidden">Домик картинка</span>
+                <b class="advantages-icons">Жильё</b>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
-                <span class="visually-hidden icon-food">Еда картинка</span>
+              <li class="advantages-item">
+                <span class="visually-hidden">Еда картинка</span>
                 <h2>Еда</h2>
-                <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
-                <span class="visually-hidden icon-souvenirs">Сувениры картинка</span>
+              <li class="advantages-item">
+                <span class="visually-hidden">Сувениры картинка</span>
                 <h2>Сувениры</h2>
-                <p>Не только китайского, но и местного<br> производства!</p>
+                <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
 
@@ -71,33 +71,33 @@
           <li class="reasons-item reasons-item-color reasons-item-reverse">
             <div class="reasons-block">
               <h2>Там есть Мост дьявола</h2>
-              <p class="number">— №2 —</p>
+              <span class="number">&mdash;&nbsp;&#8470;2&nbsp;&mdash;</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <div class="reasons-img"><img src="img/bridge.jpg" width="800" height="256" alt="Мост Дьявола"></div>
           </li>
           <li class="reasons-item reasons-item-block">
             <h2>Небольшая площадь</h2>
-            <p class="number">— №3 —</p>
+            <span class="number">&mdash;&nbsp;&#8470;3&nbsp;&mdash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="reasons-item reasons-item-block">
             <h2>Красивая дорога</h2>
-            <p class="number">— №4 —</p>
+            <span class="number">&mdash;&nbsp;&#8470;4&nbsp;&mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="reasons-item reasons-item-block">
             <h2>Мало туристов</h2>
-            <p class="number">— №5 —</p>
+            <span class="number">&mdash;&nbsp;&#8470;5&nbsp;&mdash;</span>
             <p> Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="search-form-title">
-        <p><b>Заинтересовались?</b>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+        <p><b class="intrest">Заинтересовались?</b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в
           седоне</p>
-        <button class="search-hotel" type="button">Поиск гостиницы в Cедоне</button>
+        <button class="button-search-hotel" type="button">Поиск гостиницы в Cедоне</button>
       </section>
     </main>
     <footer class="main-footer main-footer-index">
@@ -134,20 +134,26 @@
         <fieldset>
           <div>
             <label for="сheck-in">Дата заезда</label>
-            <input class="icon-calendar" type="text" name="date" id="сheck-in" required>
+            <input class="icon-calendar" type="text" name="date" id="сheck-in" placeholder="24 апреля 2017" required >
           </div>
           <div>
             <label for="сheck-out">Дата выезда</label>
-            <input class="icon-calendar" type="text" name="date" id="сheck-out" required>
+            <input class="icon-calendar" type="text" name="date" id="сheck-out" placeholder="4 июля 2017" required>
           </div>
-          <div>
+          <div class="grops">
+          <div class="group-adults">
             <label for="adults">Взрослые</label>
-            <input type="number" name="adults" id="adults" required>
+            <button class="minus" type="button">-</button>
+            <input type="number" name="adults" id="adults" placeholder="2">
+            <button class="plus" type="button">+</button>
           </div>
-          <div>
+          <div class="group-kids">
             <label for="kids">Дети</label>
-            <input type="number" name="kids" id="kids" required>
+            <button class="minus" type="button">-</button>
+            <input type="number" name="kids" id="kids" placeholder="0">
+            <button class="plus" type="button">+</button>
           </div>
+        </div>
         </fieldset>
         <div>
           <button class="modal-search" type="button">Найти</button>
@@ -158,3 +164,6 @@
 </body>
 
 </html>
+
+
+
