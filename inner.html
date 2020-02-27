@@ -65,33 +65,36 @@
 
 <section class="sorting">
 <div class="container">
-  <b>Найдено:3</b>
-  <p>Сортировка:</p>
+  <b class="sorting-found">Найдено:3</b>
+  <p class="sorting-sorting">Сортировка:</p>
   <ul class="sorting-list">
-    <li><a class="sorting-item" href="#">По цене</a></li>
-    <li><a class="sorting-item" href="#">По типу</a></li>
-    <li><a class="sorting-item" href="#">По рейтингу</a></li>
+    <li><a class="sorting-item sorting-item-price" href="#">По цене</a></li>
+    <li><a class="sorting-item sorting-item-type" href="#">По типу</a></li>
+    <li><a class="sorting-item sorting-item-rating" href="#">По рейтингу</a></li>
     <li><a class="sorting-item sorting-item-up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
     <li><a class="sorting-item sorting-item-down" href="#"><span class="visually-hidden">По убыванию</span></a></li>
   </ul>
 </div>
 </section>
+
 <!--Список отелей  -->
 <section class="hotels">
 <h2 class="visually-hidden">Список отелей</h2>
-<ul class="hotels-list">
+  <ul class="hotels-list">
   <!-- Amara -->
   <li class="hotel-item">
-    <img class="hotel-img" src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+    <div class="hotel-img"><img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort & Spa"></div>
     <div class="hotel-description">
       <a class="hotel-link" href="#">Amara Resort &#38 Spa</a>
-      <div class="hotel-type">
+      <div class="hotel-info">
+        <div class="hotel-type">
         <p>Гостиница</p>
         <a href="#">Подробнее</a>
       </div>
       <div class="hotel-price">
         <p>От 4000 Р.</p>
         <a href="#">Забронировать</a>
+      </div>
       </div>
     </div>
     <div class="hotel-rating">
@@ -101,16 +104,18 @@
   </li>
   <!-- Desert -->
   <li class="hotel-item">
-    <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+    <div class="hotel-img"><img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn"></div>
     <div class="hotel-description">
       <a class="hotel-link" href="#">Desert Quail Inn</a>
-      <div class="hotel-type">
+      <div class="hotel-info">
+        <div class="hotel-type">
         <p>Мотель</p>
         <a href="#">Подробнее</a>
-      </div>
-      <div class="hotel-price">
+        </div>
+        <div class="hotel-price">
         <p>От 3000 Р.</p>
         <a href="#">Забронировать</a>
+      </div>
       </div>
     </div>
     <div class="hotel-rating">
@@ -120,16 +125,18 @@
   </li>
   <!-- Villas -->
   <li class="hotel-item">
-    <img class="hotel-img" src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+    <div class="hotel-img"><img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"></div>
     <div class="hotel-description">
       <a class="hotel-link" href="#">Villas at Poco Diablo</a>
-      <div class="hotel-type">
+      <div class="hotel-info">
+        <div class="hotel-type">
         <p>Апартаменты</p>
         <a href="#">Подробнее</a>
-      </div>
-      <div class="hotel-price">
+        </div>
+        <div class="hotel-price">
         <p>От 2000 Р.</p>
         <a href="#">Забронировать</a>
+      </div>
       </div>
     </div>
     <div class="hotel-rating">
