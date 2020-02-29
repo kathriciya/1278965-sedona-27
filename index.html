@@ -112,31 +112,31 @@
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button-search-hotel" type="button">Поиск гостиницы в Cедоне</button>
-      </section>
+
         <!-- Модальное окно -->
-        <div class="modal">
-          <form class="booking" action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="search-form">
+          <form  class="booking" action="https://echo.htmlacademy.ru/courses" method="post">
             <fieldset>
-              <div>
-                <label for="сheck-in">Дата заезда</label>
+              <div class="search-form-item">
+                <label for="сheck-in">Дата заезда:</label>
                 <input class="icon-calendar" type="text" name="date" id="сheck-in" placeholder="24 апреля 2017" required>
               </div>
-              <div>
-                <label for="сheck-out">Дата выезда</label>
+              <div class="search-form-item">
+                <label for="сheck-out">Дата выезда:</label>
                 <input class="icon-calendar" type="text" name="date" id="сheck-out" placeholder="4 июля 2017" required>
               </div>
-              <div class="grops">
+              <div class="groups">
                 <div class="group-adults">
-                  <label for="adults">Взрослые</label>
-                  <button class="minus" type="button">-</button>
-                  <input type="number" name="adults" id="adults" placeholder="2">
-                  <button class="plus" type="button">+</button>
+                  <label for="adults">Взрослые:</label>
+                  <button class="button button-minus" type="button"></button>
+                  <input type="text" name="adults" id="adults" placeholder="2">
+                  <button class="button button-plus" type="button"></button>
                 </div>
                 <div class="group-kids">
-                  <label for="kids">Дети</label>
-                  <button class="minus" type="button">-</button>
-                  <input type="number" name="kids" id="kids" placeholder="0">
-                  <button class="plus" type="button">+</button>
+                  <label for="kids">Дети:</label>
+                  <button class="button button-minus" type="button"></button>
+                  <input type="text" name="kids" id="kids" placeholder="0">
+                  <button class="button button-plus" type="button"></button>
                 </div>
               </div>
             </fieldset>
@@ -145,6 +145,7 @@
             </div>
           </form>
         </div>
+      </section>
 
 
     </main>

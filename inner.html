@@ -24,45 +24,68 @@
     </nav>
   </header>
   <main>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" id="pool" checked>
-            <label for="pool">Бассейн</label>
-          </li>
-          <li>
-            <input type="checkbox" id="parking">
-            <label for="parking">Парковка</label>
-          </li>
-          <li>
-            <input type="checkbox" id="Wi-Fi">
-            <label for="Wi-Fi">Wi-Fi</label>
-          </li>
-        </ul>
-        <legend>Тип Жилья:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" id="hotel" checked>
-            <label for="hotel">Гостиница</label>
-          </li>
-          <li>
-            <input type="checkbox" id="motel" checked>
-            <label for="motel">Мотель</label>
-          </li>
-          <li>
-            <input type="checkbox" id="apartment" checked>
-            <label for="apartment">Апартаменты</label>
-          </li>
-        </ul>
-        <!--что здесь будет слайдер цен-->
-        Стоимость в сутки (Р):
-        3000
-        <button type="button" value="Показать">
-      </fieldset>
-    </form>
 
+    <section class="search-filter">
+      <h2 class="visually-hidden">Фильтр выбора отелей</h2>
+      <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
+
+        <fieldset class="filter-item">
+          <legend>Инфраструктура:</legend>
+          <ul class="filter-list">
+            <li>
+              <input type="checkbox" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Wi-Fi">
+              <label for="Wi-Fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-item">
+          <legend>Тип Жилья:</legend>
+          <ul class="filter-list">
+            <li>
+              <input type="checkbox" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="filter-item">
+          <div class="last-column-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button type="button" value="Показать">
+            <!--<button class="btn-transparent" type="submit">Показать</button>  -->
+        </div>
+      </form>
+    </section>
+
+
+<!-- Найдено -->
 <section class="sorting">
   <h2 class="visually-hidden">Найдено 3 отеля</h2>
   <div class="container">
