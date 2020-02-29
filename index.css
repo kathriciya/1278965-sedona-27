@@ -515,25 +515,26 @@ padding-left: 64px;
 /* Найдено */
 
 
-
 .sorting .container{
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  margin: 30px auto;
 }
 
-.sorting-found {
-  display: flex;
+/* когда в html ставлю пробел в Найдено:ПРОБЕЛ3, то 3 переносится на следующую строку*/
+
+.sorting b{
+  display: block;
+  width: 115px;
   margin-right: 49px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.sotring-sorting {
-  display: flex;
+.sotring p{
+  width: 75px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -543,7 +544,17 @@ padding-left: 64px;
 .sorting-list {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-button-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -554,7 +565,7 @@ padding-left: 64px;
 
 }
 
-.sorting-item-price {
+.sorting-item:first-child a {
   margin-left: 40px;
   font-size: 12px;
   font-weight: 400;
@@ -563,7 +574,7 @@ padding-left: 64px;
 
 }
 
-.sorting-item-type {
+.sorting-item:nth-child(2) a {
   margin-left: 33px;
   font-size: 12px;
   font-weight: 400;
@@ -572,7 +583,7 @@ padding-left: 64px;
   border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-item-rating {
+.sorting-item:nth-child(3) a {
   margin-left: 30px;
   font-size: 12px;
   font-weight: 400;
@@ -581,14 +592,16 @@ padding-left: 64px;
   border-bottom: 1px dashed #81b3d2;
 }
 .sorting-item-down path {
-  margin-left: 20px;
   fill: #81b3d2;
 }
 
 .sorting-item-up {
-  margin-left: 470px;
+  margin-left: 490px;
+  margin-right: 10px;
   opacity: 0.3;
 }
+
+
 
 .sorting-item-up:hover path,
 .sorting-item-up:focus path,
@@ -602,37 +615,43 @@ padding-left: 64px;
   fill: #81b3d2;
 }
 
-.sorting-item-type a:hover path,
-.sorting-item-type a:focus path,
-.sorting-item-rating a:hover path,
-.sorting-item-rating a:focus path {
+.sorting-item:nth-child(2) a:hover,
+.sorting-item:nth-child(3) a:focus,
+.sorting-item:nth-child(2) a:hover,
+.sorting-item:nth-child(3) a:focus {
   color: #81b3d2;
 }
 
-.sorting-item-type a:active path,
-.sorting-item-rating a:active path {
+.sorting-item:nth-child(2) a:active,
+.sorting-item:nth-child(3) a:active {
   color: #000000;
 }
 
-.sorting-item-price a:active path {
+.sorting-item:first-child a:active {
   color: #81b3d2;
 }
 
+
 /* Список отелей */
+
 .hotels {
   display: flex;
+
 }
 
 .hotels-list {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+
 .hotel-item {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(0,1,1,0.2);
@@ -644,28 +663,61 @@ padding-left: 64px;
   display: flex;
   max-width: 140px;
   margin-right: 30px;
-
 }
 
 .hotel-description {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 90px;
 }
 
 .hotel-rating {
   display: flex;
+  min-height: 90px;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 140px;
+  align-items: flex-end;
+}
 
+.hotel-rating::before {
+  content: ' ';
+  background-image: url("../img/star.svg");
+  background-position: 0 0;
+  background-repeat: space;
+  height: 17px;
+  background-size: 17px;
+  margin-bottom: 46px;
+
+}
+
+.hotel-rating.star-four::before {
+  width: 83px;
+}
+
+.hotel-rating.star-three::before {
+  width: 61px;
+}
+
+.hotel-rating.star-two::before {
+  width: 35px;
+}
+
+.rating {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 110px;
+  background-color: #f2f2f2;
+  padding: 5px 15px;
 }
 
 .hotel-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
   width: 270px;
 
 }
@@ -682,19 +734,24 @@ padding-left: 64px;
   color: #000;
 }
 
-.hotel-link a:hover,
-.hotel-link a:focus {
+.hotel-link:hover,
+.hotel-link:focus {
   color: #81b3d2;
 }
 
-.hotel-link a:active {
+.hotel-link:active {
   opacity: 0.3;
 }
+
+
 
 .hotel-info p {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+
 }
 
 .hotel-info a {
@@ -724,7 +781,6 @@ padding-left: 64px;
 
 .button-blue:active {
   background-color: #5496bd;
-
 }
 
 .button-brown:hover,
@@ -738,53 +794,7 @@ padding-left: 64px;
 }
 
 .hotel-info a:active {
-  background-color: #5496bd;
   opacity: 0.3;
 }
 
-.hotel-rating::before {
-  content: ' ';
-  background-image: url("../img/star.svg");
-  background-position: 0 0;
-  background-repeat: space;
-  height: 17px;
-  background-size: 17px;
-  margin-bottom: 46px;
 
-}
-
-.hotel-rating .star-four::before {
-  width: 83px;
-}
-
-.hotel-rating .star-three::before {
-  width: 61px;
-}
-
-.hotel-rating .star-two::before {
-  width: 30px;
-}
-
-.rating {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  width: 110px;
-  height: 16px;
-  background-color: #f2f2f2;
-  padding: 5px 15px;
-}
-
-
-
-/*
-
-background-repeat: no-repeat;
-background-position: center bottom -3px,
-width: 1200px;
-height: 510px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #86b7d4;*/
-*/
