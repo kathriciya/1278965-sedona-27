@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link  href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
   <div class="main-wrapper">
+    <!-- Шапка сайта -->
   <header>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -24,7 +26,7 @@
     </nav>
   </header>
   <main>
-
+    <!-- Фильтр -->
     <section class="search-filter">
       <h2 class="visually-hidden">Фильтр выбора отелей</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -41,7 +43,6 @@
               <label class="filter-option" for="parking">Парковка</label>
             </li>
             <li>
-              <!-- добавила disabled -->
               <input class="visually-hidden filter-input" type="checkbox" id="Wi-Fi" disabled>
               <label class="filter-option" for="Wi-Fi">Wi-Fi</label>
             </li>
@@ -60,7 +61,7 @@
               <label class="filter-option" for="motel">Мотель</label>
             </li>
             <li>
-              <input class="visually-hidden filter-input" type="checkbox" id="apartment" checked>
+              <input class="visually-hidden filter-input" type="checkbox" id="apartment" disabled checked>
               <label class="filter-option" for="apartment">Апартаменты</label>
             </li>
           </ul>
@@ -146,7 +147,7 @@
         </div>
         <div class="hotel-price">
         <p>От 3000 Р.</p>
-        <a class="button-brown" href="#">Забронировать</a>
+        <a class="button-brown" href="#" >Забронировать</a>
       </div>
       </div>
     </div>
@@ -180,10 +181,10 @@
 </section>
 
   </main>
-  <footer class="main-footer main-footer-index">
+  <!-- Подвал сайта -->
+  <footer class="main-footer">
     <div class="footer-content">
       <div class="container">
-
         <div class="footer-column">
           <div class="contacts">
           <span class="footer-back">#VISITSEDONA</span><a class="phone-sedona" href="#">Тел: +7(495) 666-02-66</a>
