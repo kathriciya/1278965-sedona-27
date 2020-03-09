@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/* Я использовала last 1 version*/
 html {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -16,6 +19,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
   background-color: #f2f2f2;
 }
 
@@ -24,6 +28,7 @@ a {
 }
 
 .img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -36,7 +41,8 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -51,8 +57,9 @@ a {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Header */
@@ -62,18 +69,21 @@ a {
   flex-direction: column;
   align-items: center;
   height: 56px;
+
   background-color: #ffffff;
 }
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  min-height: 56px;
   align-items: center;
+  align-self: stretch;
+  width: 100%;
+  min-height: 56px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .site-navigation li {
@@ -82,15 +92,17 @@ a {
 
 .site-navigation li:nth-child(4n-3),
 .site-navigation li:nth-child(4n-2) {
-  text-align: left;
   padding-left: 73px;
+
+  text-align: left;
 
 }
 
 .site-navigation li:nth-child(4n-1),
 .site-navigation li:nth-child(4n) {
-  text-align: right;
   padding-right: 76px;
+
+  text-align: right;
 }
 
 .site-navigation li:nth-child(4n+2) {
@@ -99,8 +111,9 @@ a {
 
 .logo {
   position: relative;
-  margin-top: -58px;
   z-index: 100;
+
+  margin-top: -58px;
 }
 
 .site-navigation a {
@@ -121,15 +134,16 @@ a {
 }
 
 .greeting {
-  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom -2px, center top -83px;
-  width: 1200px;
-  height: 510px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1200px;
+  height: 510px;
+
   background-color: #86b7d4;
+  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+  background-position: center bottom -2px, center top -83px;
+  background-repeat: no-repeat;
 }
 
 .greeting-img {
@@ -140,8 +154,9 @@ a {
 /* Main */
 
 .information {
-  background-color: #ffffff;
   padding-top: 60px;
+
+  background-color: #ffffff;
 }
 
 .information .container {
@@ -151,30 +166,33 @@ a {
 }
 
 .information-description {
-  max-width: 440px;
   display: block;
+  max-width: 441px;
   margin-top: -2px;
   margin-bottom: 38px;
-  text-align: center;
+
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
 }
 
 /* Причины */
 
 .reasons {
-  max-width: 490px;
+  max-width: 492px;
   margin-top: -11px;
   margin-bottom: 51px;
+
   font-weight: 400;
 }
 
 .reasons-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .reasons-list p {
@@ -182,7 +200,6 @@ a {
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .reasons-item {
   display: flex;
@@ -198,8 +215,9 @@ a {
 }
 
 .reasons-item-color {
-  background-color: #81b3d2;
   height: 256px;
+
+  background-color: #81b3d2;
 }
 
 .reasons-item-reverse {
@@ -210,63 +228,66 @@ a {
   display: block;
   max-width: 400px;
   width: 33.3333%;
-  background-color: #eeeeee;
+
   text-align: center;
+
+  background-color: #eeeeee;
 }
 
 .reasons-item-block:nth-of-type(4) {
   padding-top: 50px;
-  padding-right: 97px;
+  padding-right: 95px;
   padding-bottom: 44px;
   padding-left: 95px;
 }
 
 .reasons-item-block:nth-of-type(5) {
   padding-top: 50px;
-  padding-right: 69px;
+  padding-right: 68px;
   padding-bottom: 44px;
-  padding-left: 69px;
+  padding-left: 68px;
 }
 
 .reasons-item-block:nth-of-type(6) {
   padding-top: 50px;
-  padding-right: 76px;
+  padding-right: 75px;
   padding-bottom: 44px;
   padding-left: 77px;
 }
 
 .reasons-block {
   display: block;
-  width: auto;
-  text-align: center;
-  font-weight: 400;
-  color: #ffffff;
+  width: 400px;
   padding-top: 44px;
   padding-right: 49px;
   padding-bottom: 65px;
   padding-left: 48px;
+
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
 }
 
 .reasons-title {
   width: 160px;
   margin: 0 auto;
+
   font-size: 21px;
   line-height: 21px;
 }
 
-
 .reasons-item-block .reasons-title {
   margin-top: -2px;
 }
-
 
 .reasons-item-block p {
   margin-top: -3px;
 }
 
 .reasons-item:nth-child(1) .reasons-block {
+  width: 400px;
   padding-top: 46px;
-  padding-right: 60px;
+  padding-right: 58px;
   padding-bottom: 64px;
   padding-left: 60px;
 }
@@ -282,9 +303,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .advantages-list p {
@@ -295,37 +317,42 @@ a {
   display: block;
   max-width: 400px;
   width: 33.3333%;
-  text-align: center;
-  background-repeat: no-repeat;
   padding-top: 160px;
   padding-bottom: 68px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
 }
 
 /* Домик */
 
 .advantages-item-house {
+  padding-right: 75px;
+  padding-left: 71px;
+
   background-image: url("../img/icon-1.svg");
   background-position: center top 60px;
-  padding-right: 75px;
-  padding-left: 73px;
 }
 
 /* Еда */
 
 .advantages-item-food {
-  background-image: url("../img/icon-3.svg");
-  background-position: center top 61px;
   padding-right: 57px;
   padding-left: 58px;
+
+  background-image: url("../img/icon-3.svg");
+  background-position: center top 61px;
 }
 
 /* Сувениры */
 
 .advantages-item-souvenirs {
+  padding-right: 62px;
+  padding-left: 64px;
+
   background-image: url("../img/icon-2.svg");
   background-position: center top 56px;
-  padding-right: 63px;
-  padding-left: 64px;
 }
 
 .advantages-title {
@@ -377,26 +404,31 @@ a {
 
 /* Окно */
 
+
 .form {
   position: absolute;
   left: calc(50% - (568px / 2));
   top: 100%;
   z-index: 100;
+
+  width: 568px;
+  margin: 0;
+  padding: 55px;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
   background-color: #ffffff;
-  width: 568px;
-  padding: 55px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  margin: 0;
 }
 
 .form-item {
-  display: flex;
   position: relative;
+
+  display: flex;
   align-items: center;
   margin: 0;
   margin-bottom: 29px;
@@ -413,17 +445,18 @@ a {
 
 .form-groups-item {
   position: relative;
+
   display: flex;
   width: 100%;
   align-items: center;
 }
 
 .form-item label {
-  margin-right: 23px;
+  margin-right: 21px;
 }
 
 .form-item:nth-child(2) label {
-  margin-right: 20px;
+  margin-right: 17px;
 }
 
 .form-item .form-input {
@@ -434,9 +467,14 @@ a {
   padding-right: 34px;
   padding-left: 13px;
   padding-bottom: 13px;
-  font: inherit;
-  color: #000000;
-  text-transform: inherit;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+
   background-color: #f2f2f2;
   border: none;
 }
@@ -445,12 +483,14 @@ a {
   position: absolute;
   right: 0;
   top: 0;
+
+  box-sizing: border-box;
   width: 38px;
   height: 38px;
-  box-sizing: border-box;
-  border: none;
+
   background-color: #f2f2f2;
   fill: #a9a9a9;
+  border: none;
 }
 
 .form-datepicker:hover path,
@@ -474,18 +514,38 @@ a {
   height: 38px;
   padding-right: 5px;
   padding-left: 5px;
-  text-align: center;
-  background-color: #f2f2f2;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  text-align: center;
+
+  background-color: #f2f2f2;
   border: none;
 }
 
 .form-groups-item label {
   margin-right: 41px;
+}
+
+/* Почему-то в Mozilla не работает цвет */
+.form-input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.form-input::-moz-placeholder {
+  color: #000;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #000;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #000;
 }
 
 .form-input::placeholder {
@@ -501,43 +561,53 @@ a {
   position: relative;
   width: 38px;
   height: 38px;
+
+
   background-color: #f2f2f2;
   border: none;
 }
 
+/* В IE11 "+" не идеальны*/
 .form-button-minus::before,
 .form-button-plus::before {
   content: ' ';
   position: absolute;
+  top: 18px;
   left: 13px;
   width: 12px;
   height: 3px;
+
   background-color: #a9a9a9;
 }
 
 .form-button-plus::after {
   content: ' ';
   position: absolute;
+  top: 18px;
   left: 13px;
   width: 12px;
   height: 3px;
+
   background-color: #a9a9a9;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .form-button-search {
   position: relative;
+
   display: block;
   width: 100%;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #81b3d2;
   padding: 17px 196px;
+
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
   border: none;
 }
 
@@ -547,14 +617,16 @@ a {
 }
 
 .form-button-search:active {
-  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+
 }
 
 /* Footer */
 
 .main-footer {
   width: 1200px;
+
   color: #000000;
   background-color: #ffffff;
   opacity: 0.9;
@@ -569,19 +641,21 @@ a {
   width: 100%;
 }
 
-/* убрала из inner.html .main-footer-index и добавила .footer-content position: relative */
-
+/* из-за IE11 убрала min-height и как быть с переполнением соц.листа? */
 .footer-content {
   position: relative;
+
   display: flex;
+  height: 120px;
+
   background-color: rgba(255, 255, 255, 0.9);
-  min-height: 120px;
 }
 
 .main-footer-index .footer-content {
   position: absolute;
-  width: 100%;
   bottom: 0;
+
+  width: 100%;
 }
 
 .footer-content .container {
@@ -599,7 +673,6 @@ a {
   padding-left: 51px;
 }
 
-
 .footer-column:nth-child(2) {
   justify-content: center;
 }
@@ -615,9 +688,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   max-width: 150px;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .social-list li:not(:nth-child(3n)) {
@@ -626,10 +700,11 @@ a {
 
 .social-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
+
   background-color: #81b3d2;
 }
 
@@ -637,27 +712,31 @@ a {
   content: ' ';
   display: block;
   flex-shrink: 0;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .social-button-tw::before {
-  background-image: url("../img/twitter.svg");
   width: 17px;
   height: 15px;
+
+  background-image: url("../img/twitter.svg");
 }
 
 .social-button-fb::before {
-  background-image: url("../img/fb-icon.svg");
   width: 12px;
   height: 22px;
+
+  background-image: url("../img/fb-icon.svg");
 }
 
 .social-button-ytb::before {
-  background-image: url("../img/youtube.svg");
   width: 20px;
   height: 16px;
+
+  background-image: url("../img/youtube.svg");
 }
 
 .social-button:hover,
@@ -689,6 +768,7 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -696,8 +776,9 @@ a {
 
 .phone-sedona {
   display: block;
-  color: #000;
   padding-top: 5px;
+
+  color: #000;
 }
 
 .footer-copyright {
@@ -706,21 +787,18 @@ a {
   line-height: 26px;
 }
 
-
-
 /*inner.html*/
-
-.inner-page {}
 
 /* Фильтр выбора отелей */
 
 .search-filter {
+  color: #fff;
+
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom -250px;
   background-size: cover;
-  color: #fff;
 }
 
 .filter {
@@ -736,17 +814,19 @@ a {
 .filter-item:first-child {
   display: block;
   width: 255px;
-  border: none;
   margin: 0;
   padding: 0;
+
+   border: none;
 }
 
 .filter-item:nth-child(2) {
   display: block;
   width: 255px;
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
 .filter-item:last-child {
@@ -756,9 +836,10 @@ a {
 }
 
 .filter-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .filter-list li {
@@ -769,6 +850,7 @@ a {
 .filter legend {
   margin: 0;
   margin-bottom: 24px;
+
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -776,11 +858,14 @@ a {
 
 .filter-option {
   position: relative;
+
   display: block;
-  cursor: pointer;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  cursor: pointer;
 }
 
 .filter-input+.filter-option::before {
@@ -788,29 +873,36 @@ a {
   position: absolute;
   left: -40px;
   top: 0;
+
   width: 23px;
   height: 23px;
+
   background-image: url("../img/checkbox-off.svg");
   background-size: 100%;
-  background-repeat: no-repeat;
   background-position: 0 0;
+  background-repeat: no-repeat;
+
   cursor: pointer;
 }
+
 .filter-input:checked+.filter-option::before {
   width: 27px;
   height: 23px;
+
   background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-input:disabled+.filter-option::before {
   width: 23px;
   height: 23px;
+
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .filter-input:disabled:checked+.filter-option::before {
   width: 27px;
   height: 23px;
+
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -827,6 +919,7 @@ a {
 .filter-item:last-child {
   width: 314px;
   margin-left: auto;
+
   color: #fff;
   text-transform: uppercase;
 }
@@ -835,26 +928,33 @@ a {
   display: block;
   max-width: 0 auto;
   margin-bottom: 9px;
-  font-weight: 700;
+
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
 }
 
 .price-controls {
-  display: block;
   position: relative;
-  height: 36px;
+
+  display: block;
   width: 318px;
+  height: 36px;
   margin-bottom: 20px;
+
   font-size: 0;
+
   border: 2px solid #fff;
   border-radius: 2px;
 }
 
 .price-controls label {
-  font-size: 14px;
-  line-height: 30px;
   vertical-align: middle;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
   cursor: pointer;
 }
 
@@ -862,8 +962,15 @@ a {
   box-sizing: border-box;
   width: 50px;
   margin: 0;
-  color: inherit;
-  font: inherit;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+
   background: none;
   border: none;
 }
@@ -883,10 +990,13 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+
   width: 2px;
   height: 22px;
+
   background: #fff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .filter-button {
@@ -894,51 +1004,59 @@ a {
   margin: 0 auto;
   margin-left: 83px;
   padding: 6px 35px;
+
   font-size: 14px;
   line-height: 20px;
   color: #fff;
   text-transform: uppercase;
+
   background: transparent;
   border: 2px solid #fff;
   border-radius: 2px;
+
   cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  background-color: #fff;
   color: #000;
+
+  background-color: #fff;
 }
 
-/* сама шкала */
-
 .range-controls {
-  display: block;
   position: relative;
+
+  display: block;
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   display: block;
   height: 2px;
+
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
+
   background: #fff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
+
   width: 20px;
   height: 20px;
+
   background: #ababab;
   border: 8px solid #fff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+
   cursor: pointer;
 }
 
@@ -952,9 +1070,11 @@ a {
 
 .range-toggle:hover, .range-toggle:focus {
   top: -10px;
-  border: 9px solid #fff;
+
   width: 22px;
   height: 22px;
+
+  border: 9px solid #fff;
 }
 
 /* Найдено */
@@ -972,14 +1092,15 @@ a {
   width: 117px;
   margin-right: 49px;
   margin-top: 8px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
 }
 
 .sorting p {
   width: 75px;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -990,42 +1111,49 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: baseline;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .sorting-button-list {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .sorting-item {
   display: flex;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-
 }
 
 .sorting-item:first-child a {
   margin-left: 40px;
+
   color: #81b3d2;
 }
 
 .sorting-item:nth-child(2) a {
   margin-left: 11px;
+
   color: rgba(0, 0, 0, 0.3);
+
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item:nth-child(3) a {
   margin-left: 15px;
+
   color: rgba(0, 0, 0, 0.3);
+
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1036,6 +1164,7 @@ a {
 .sorting-item-up {
   margin-left: 490px;
   margin-right: 10px;
+
   opacity: 0.3;
 }
 
@@ -1087,8 +1216,9 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(0, 1, 1, 0.2);
   padding: 29px 73px;
+
+  border-top: 1px solid rgba(0, 1, 1, 0.2);
 }
 
 .hotel-item:last-child {
@@ -1118,12 +1248,13 @@ a {
 
 .hotel-rating::before {
   content: ' ';
+  height: 17px;
+  margin-bottom: 46px;
+
   background-image: url("../img/star.svg");
   background-position: 0 0;
-  background-repeat: space;
-  height: 17px;
   background-size: 17px;
-  margin-bottom: 46px;
+  background-repeat: space;
 }
 
 .hotel-rating.star-four::before {
@@ -1141,24 +1272,26 @@ a {
 .rating {
   display: flex;
   flex-shrink: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
   width: 111px;
-  background-color: #f2f2f2;
   padding-top: 5px;
   padding-right: 12px;
   padding-bottom: 3px;
   padding-left: 16px;
-}
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  background-color: #f2f2f2;
+ }
 
 .hotel-info {
-  margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   width: 270px;
+  margin-top: 5px;
 }
 
 .hotel-type {
@@ -1167,6 +1300,7 @@ a {
 
 .hotel-link {
   margin-top: -6px;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -1182,30 +1316,34 @@ a {
 }
 
 .hotel-info p {
+  margin-top: 2px;
+  margin-bottom: 15px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-top: 2px;
-  margin-bottom: 15px;
 }
 
 .hotel-info a {
+  padding: 4px 17px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  padding: 4px 17px;
 }
 
 .button-blue {
   width: 110px;
   height: 27px;
+
   background-color: #81b3d2;
 }
 
 .button-brown {
   width: 142px;
   height: 27px;
+
   background-color: #766357;
 }
 
