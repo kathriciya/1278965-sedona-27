@@ -73,6 +73,7 @@ a {
   background-color: #ffffff;
 }
 
+/* проблема с переполнением навигации */
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +215,7 @@ a {
   font-weight: 400;
 }
 
+/* проблема с переполнением, когда ставлю min-height все начинает вываливаться */
 .reasons-item-color {
   height: 256px;
 
@@ -465,7 +467,7 @@ a {
   height: 38px;
   padding-top: 13px;
   padding-right: 34px;
-  padding-left: 13px;
+  padding-left: 15px;
   padding-bottom: 13px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -488,7 +490,6 @@ a {
   width: 38px;
   height: 38px;
 
-  background-color: #f2f2f2;
   fill: #a9a9a9;
   border: none;
 }
@@ -531,25 +532,38 @@ a {
   margin-right: 41px;
 }
 
-/* Почему-то в Mozilla не работает цвет */
 .form-input::-webkit-input-placeholder {
   color: #000;
+  opacity: 1;
 }
 
 .form-input::-moz-placeholder {
   color: #000;
+  opacity: 1;
 }
+
 
 .form-input:-ms-input-placeholder {
   color: #000;
+  opacity: 1;
 }
 
 .form-input::-ms-input-placeholder {
   color: #000;
+  opacity: 1;
 }
 
 .form-input::placeholder {
   color: #000;
+  opacity: 1;
+}
+
+.form-input:hover {
+  background-color: #ebebeb;
+}
+
+.form-input:focus {
+  background-color: #ffffff;
 }
 
 .form-groups-item:last-child label {
@@ -591,6 +605,21 @@ a {
   background-color: #a9a9a9;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.form-button-minus:hover::before,
+.form-button-plus:hover::before,
+.form-button-plus:hover::after,
+.form-button-minus:focus::before,
+.form-button-plus:focus::before,
+.form-button-plus:focus::after{
+  background-color: #000000;
+}
+
+.form-button-minus:active::before,
+.form-button-plus:active::before,
+.form-button-plus:active::after {
+  background-color: #81b3d2;
 }
 
 .form-button-search {
@@ -690,12 +719,14 @@ a {
   max-width: 150px;
   margin: 0;
   padding: 0;
+  padding-top: 6px;
 
   list-style: none;
 }
 
 .social-list li:not(:nth-child(3n)) {
   margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .social-button {
@@ -926,7 +957,7 @@ a {
 
 .last-column-title {
   display: block;
-  max-width: 0 auto;
+  max-width: auto;
   margin-bottom: 9px;
 
   font-size: 16px;
