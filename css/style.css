@@ -73,7 +73,6 @@ a {
   background-color: #ffffff;
 }
 
-/* проблема с переполнением навигации */
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +95,6 @@ a {
   padding-left: 73px;
 
   text-align: left;
-
 }
 
 .site-navigation li:nth-child(4n-1),
@@ -118,7 +116,7 @@ a {
 }
 
 .site-navigation a {
-  color: #000;
+  color: #000000;
 }
 
 .site-navigation a[href]:hover,
@@ -205,6 +203,7 @@ a {
 .reasons-item {
   display: flex;
   width: 100%;
+  min-height: 256px;
 }
 
 .reasons-number {
@@ -215,10 +214,7 @@ a {
   font-weight: 400;
 }
 
-/* проблема с переполнением, когда ставлю min-height все начинает вываливаться */
 .reasons-item-color {
-  height: 256px;
-
   background-color: #81b3d2;
 }
 
@@ -262,7 +258,7 @@ a {
   width: 400px;
   padding-top: 44px;
   padding-right: 49px;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
   padding-left: 48px;
 
   font-weight: 400;
@@ -290,13 +286,14 @@ a {
   width: 400px;
   padding-top: 46px;
   padding-right: 58px;
-  padding-bottom: 64px;
+  padding-bottom: 43px;
   padding-left: 60px;
 }
 
 .reasons-img {
   display: block;
   width: 800px;
+  height: 256px;
 }
 
 /* Преимущества */
@@ -405,7 +402,6 @@ a {
 }
 
 /* Окно */
-
 
 .form {
   position: absolute;
@@ -533,28 +529,28 @@ a {
 }
 
 .form-input::-webkit-input-placeholder {
-  color: #000;
+  color: #000000;
   opacity: 1;
 }
 
 .form-input::-moz-placeholder {
-  color: #000;
+  color: #000000;
   opacity: 1;
 }
 
 
 .form-input:-ms-input-placeholder {
-  color: #000;
+  color: #000000;
   opacity: 1;
 }
 
 .form-input::-ms-input-placeholder {
-  color: #000;
+  color: #000000;
   opacity: 1;
 }
 
 .form-input::placeholder {
-  color: #000;
+  color: #000000;
   opacity: 1;
 }
 
@@ -564,6 +560,7 @@ a {
 
 .form-input:focus {
   background-color: #ffffff;
+  border: solid 2px #e5e5e5;
 }
 
 .form-groups-item:last-child label {
@@ -581,10 +578,9 @@ a {
   border: none;
 }
 
-/* В IE11 "+" не идеальны*/
 .form-button-minus::before,
 .form-button-plus::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 18px;
   left: 13px;
@@ -595,7 +591,7 @@ a {
 }
 
 .form-button-plus::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 18px;
   left: 13px;
@@ -670,7 +666,6 @@ a {
   width: 100%;
 }
 
-/* из-за IE11 убрала min-height и как быть с переполнением соц.листа? */
 .footer-content {
   position: relative;
 
@@ -740,7 +735,7 @@ a {
 }
 
 .social-button::before {
-  content: ' ';
+  content: " ";
   display: block;
   flex-shrink: 0;
 
@@ -809,7 +804,7 @@ a {
   display: block;
   padding-top: 5px;
 
-  color: #000;
+  color: #000000;
 }
 
 .footer-copyright {
@@ -823,7 +818,7 @@ a {
 /* Фильтр выбора отелей */
 
 .search-filter {
-  color: #fff;
+  color: #ffffff;
 
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
@@ -848,7 +843,7 @@ a {
   margin: 0;
   padding: 0;
 
-   border: none;
+  border: none;
 }
 
 .filter-item:nth-child(2) {
@@ -900,7 +895,7 @@ a {
 }
 
 .filter-input+.filter-option::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: -40px;
   top: 0;
@@ -937,7 +932,6 @@ a {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-
 .filter-input:focus+.filter-option::before,
 .filter-input:checked:focus+.filter-option::before {
   outline: 5px solid #4d90fe;
@@ -951,7 +945,7 @@ a {
   width: 314px;
   margin-left: auto;
 
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -975,7 +969,7 @@ a {
 
   font-size: 0;
 
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 2px;
 }
 
@@ -999,7 +993,7 @@ a {
   font-size: 14px;
   line-height: 100%;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 
   background: none;
@@ -1017,7 +1011,7 @@ a {
 }
 
 .price-controls::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1025,7 +1019,7 @@ a {
   width: 2px;
   height: 22px;
 
-  background: #fff;
+  background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1038,11 +1032,11 @@ a {
 
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 2px;
 
   cursor: pointer;
@@ -1050,9 +1044,9 @@ a {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #000;
+  color: #000000;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .range-controls {
@@ -1073,7 +1067,7 @@ a {
   width: 80%;
   height: 2px;
 
-  background: #fff;
+  background: #ffffff;
 }
 
 .range-toggle {
@@ -1084,7 +1078,7 @@ a {
   height: 20px;
 
   background: #ababab;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
 
@@ -1105,7 +1099,7 @@ a {
   width: 22px;
   height: 22px;
 
-  border: 9px solid #fff;
+  border: 9px solid #ffffff;
 }
 
 /* Найдено */
@@ -1278,7 +1272,7 @@ a {
 }
 
 .hotel-rating::before {
-  content: ' ';
+  content: " ";
   height: 17px;
   margin-bottom: 46px;
 
@@ -1335,7 +1329,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: #000;
+  color: #000000;
 }
 
 .hotel-link:hover, .hotel-link:focus {
