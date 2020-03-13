@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-/* Я использовала last 1 version*/
 html {
   box-sizing: border-box;
 }
@@ -497,6 +495,11 @@ a {
 
 .form-datepicker:active path {
   fill: #81b3d2;
+
+}
+
+.form-datepicker svg {
+  position: relative;
 }
 
 .form-groups-item .form-button {
