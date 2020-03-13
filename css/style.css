@@ -450,11 +450,8 @@ a {
 }
 
 .form-item label {
-  margin-right: 21px;
-}
-
-.form-item:nth-child(2) label {
-  margin-right: 17px;
+  margin-left: 2px;
+  margin-right: auto;
 }
 
 .form-item .form-input {
@@ -463,7 +460,7 @@ a {
   height: 38px;
   padding-top: 13px;
   padding-right: 34px;
-  padding-left: 15px;
+  padding-left: 13px;
   padding-bottom: 13px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -487,7 +484,10 @@ a {
   height: 38px;
 
   fill: #a9a9a9;
+  background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .form-datepicker:hover path,
@@ -538,7 +538,6 @@ a {
   opacity: 1;
 }
 
-
 .form-input:-ms-input-placeholder {
   color: #000000;
   opacity: 1;
@@ -576,6 +575,8 @@ a {
 
   background-color: #f2f2f2;
   border: none;
+
+  cursor: pointer;
 }
 
 .form-button-minus::before,
